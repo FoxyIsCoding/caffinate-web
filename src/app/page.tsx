@@ -17,9 +17,11 @@ export default function Home() {
   return (
     <div className="flex flex-1 items-center justify-center">
       <main className="flex w-full max-w-3xl flex-col items-center justify-center gap-6 px-8 text-center">
-        <h1 className="text-5xl font-extrabold sm:text-6xl mx-auto">
-          Caffinate
-        </h1>
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-extrabold sm:text-6xl mx-auto">
+            Caffinate
+          </h1>
+        </div>
         <p className="mt-6 text-lg text-center">
           an open-source tracker for your energy drink consumption
         </p>
