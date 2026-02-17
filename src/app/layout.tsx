@@ -77,8 +77,8 @@ export default async function RootLayout({
               </span>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-xs font-medium">
-                  <a
-                    href="https://github.com/FoxyIsCoding/Caffinate"
+              <a
+                href="https://github.com/FoxyIsCoding/Caffinate"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-secondary-container px-3 py-1 text-secondary-on-container hover:bg-secondary-container-high transition-colors"
@@ -86,7 +86,7 @@ export default async function RootLayout({
                 GitHub
               </a>
               <a
-                href="https://flavortown.hackclub.com/projects/6663"
+                href="https://flavortown.hackclub.com/projects/12036"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full border border-outline px-3 py-1 text-on-surface-variant hover:bg-surface-container-high transition-colors"
