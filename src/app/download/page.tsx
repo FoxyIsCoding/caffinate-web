@@ -3,11 +3,13 @@
 import "@material/web/button/filled-tonal-button.js";
 import { useEffect, useState } from "react";
 
-declare global {
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      "md-filled-tonal-button": React.DetailedHTMLProps<
-        React.ButtonHTMLAttributes<HTMLElement> & { slot?: string },
+      'md-filled-tonal-button': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & { 
+          slot?: string;
+        },
         HTMLElement
       >;
     }
