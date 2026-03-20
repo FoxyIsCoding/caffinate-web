@@ -45,6 +45,9 @@ export default function Home() {
               paddingBlock: "0.5rem",
               borderRadius: "9999px",
             }}
+            onClick={() => {
+              window.location.href = "/download";
+            }}
           >
             Download
           </md-filled-tonal-button>
