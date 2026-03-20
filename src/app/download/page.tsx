@@ -46,12 +46,16 @@ export default function Download() {
         );
 
         if (!res.ok) {
-          throw new Error("Failed to fetch release");
+          const errorText = await res.text();
+          throw new Error(
+            `Failed to fetch release (${res.status}): ${errorText || res.statusText}`
+          );
         }
 
         const data = (await res.json()) as GitHubRelease;
         setRelease(data);
       } catch (err) {
+        console.error("Error fetching release:", err);
         setError(err instanceof Error ? err.message : "Unknown error");
       } finally {
         setLoading(false);
